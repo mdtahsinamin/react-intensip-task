@@ -10,7 +10,7 @@ function App() {
   <>
     <Suspense fallback={
        <div className='d-flex justify-content-center align-content-center'>
-           <img src={loader} alt='Loading..' className='img-fluid w-50'/>
+           <img src={loader} alt='Loading..' className='img-fluid'/>
        </div>
     }>
        <Router>

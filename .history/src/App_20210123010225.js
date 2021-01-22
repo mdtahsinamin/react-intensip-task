@@ -8,11 +8,7 @@ import loader from "../src/images/loader.gif";
 function App() {
   return (
   <>
-    <Suspense fallback={
-       <div className='d-flex justify-content-center align-content-center'>
-           <img src={loader} alt='Loading..' className='img-fluid w-50'/>
-       </div>
-    }>
+    <Suspense fallback={<div>Loading...</div>}>
        <Router>
           <Switch>
               <Route path='/home' 
